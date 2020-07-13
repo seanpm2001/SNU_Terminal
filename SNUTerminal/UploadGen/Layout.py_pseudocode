@@ -1,0 +1,260 @@
+# start of script
+print ("\n")
+print ("Layout.py_pseudocode")
+print ("\n============================================================================================================")
+print ("Info\n")
+print ("Build 3 version 1.02")
+print ("Previous version: Build 2 version 1.01\n")
+print ("MIME type: undefined/read only")
+print ("Encoding: ANSI (No need for UTF-8 yet)\n")
+print ("Runs with: Python 3.6-3.8")
+print ("File Size: 17,551 bytes (17.51 Kilobytes (base 10) 17.14 Kilobytes)\n")
+print ("Description: comment only file; File that defines the layout of the content generation system")
+print ("Language compatibility: Python 3.6x, Python 3.7x, Python 3.8x\n")
+print ("Update date: June 25th 2019")
+print ("First date: June 25th 2019 (for version 1.00)\n")
+print ("Created using: notepad++ (version 7.5.9 (64 bit)) on Windows 10 (not Linux yet, still waiting for new device\nand compatible distribution before I can wipe it and install Linux)")
+print ("\n============================================================================================================")
+noMore = input("\n\n[NOTICE]\nThis file is for COMMENTS ONLY. Do NOT run this file, there is no point. Press [ENTER] key to close")
+'''
+Comment area (the core part of the file)
+________________________________________
+Layout of the Content Generation system|
+#''''''''''''''''''''''''''''''''''''''#
+
+ _______________________________________
+(Viewers index:                         )
+[01 video viewers                       ]
+[02 image viewers                       ]
+[03 text viewers                        ]
+[04 book viewers                        ]
+[05 software viewers                    ]
+[06 audio viewers                       ]
+[07 blog viewers                        ]
+[08 3D object viewers                   ]
+[09 Presentation viewers                ]
+[10 Spreadsheet viewers                 ]
+[11 Database viewers                    ]
+[12 User profile                        ]
+(End of viewers index                   )
+#''''''''''''''''''''''''''''''''''''''''''#
+
+Content is stored below this divider, and between/under the dividers of this type below
+### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ###
+
+Video viewers
+
+Full video mode
+Single video viewer. This mode is separate from the "rated video mode" which contains votes. This mode accepts likes, dislikes, views, and more.
+Allowed file formats include: .mp4 .wmv .avi .ogg .mkv .webm .flv .mov .qt .m4p .m4v .mpg .mpeg .mpe .m2v .3gp .3g2 .gif .gifv
+
+Rated video mode
+Rated video mode can be used in Reddit mode. It is similar to full video mode, with the exception of things such as the upvote/downvote option replacing the like/dislike option
+This mode still accepts comments, and allows the following file formats: .mp4 .wmv .avi .ogg .mkv .webm .flv .mov .qt .m4p .m4v .mpg .mpeg .mpe .m2v .3gp .3g2 .gif .gifv
+
+Playlist mode
+Playlist mode is a mixture of the full video and rated video modes in the form of a playlist. A single playlist can store up to 4,294,967,295 (4 billion, 294 million, 967 thousand, 295) video links (limited to a 32 bit integer for technical reasons)
+This mode has more options, and can have videos imported into it. It can be viewed in reddit mode as well, but only as a link
+
+Video streaming mode
+Video streaming mode is the mode that supports live streaming. Live streams can be put into playlist mode, and livestreams are also compatible with reddit mode, but only as a link.
+Live streams are recorded directly from a device, and do not have a specific file format yet.
+
+Video edit mode
+Video editing mode is the mode where you can edit videos within the site. It has to be viewed separately from other modes, but previews can mimic what it will look like in the other 4 modes
+When editing, you can import projects with file formats such as .wp3 .wlmp .wmmp
+
+### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ###
+
+Image viewers
+Not to be confused with {3D Object Viewers}
+
+Full image mode
+Single image viewer. This mode is separate from the "rated image mode" which contains votes. This mode accepts likes, dislikes, views, and more.
+Allowed file formats include: .png .pns .psd .pdt .jpg .jpe .jfif .jpeg .jif .gif .ico .cur .tif .tiff .bmp .dib .heif .webP .wmf .emf .exif .bpg .svg .PPM .PGM .PBM .PNM
+
+Rated image mode
+Rated image mode can be used in Reddit mode. It is similar to full image mode, with the exception of things such as the upvote/downvote option replacing the like/dislike option
+This mode still accepts comments, and allows the following file formats: .png .pns .psd .pdt .jpg .jpe .jfif .jpeg .jif .gif .ico .cur .tif .tiff .bmp .dib .heif .webP .wmf .emf .exif .bpg .svg .PPM .PGM .PBM .PNM
+
+Gallery mode
+Gallery mode is a mixture of the full image and rated image modes in the form of a gallery (similar to a playlist). A single gallery can store up to 4,294,967,295 (4 billion, 294 million, 967 thousand, 295) image links (limited to a 32 bit integer for technical reasons)
+This mode has more options, and can have images imported into it. It can be viewed in reddit mode as well, but only as a link
+
+Image edit mode
+Image editing mode is the mode where you can edit images within the site. It has to be viewed separately from other modes, but previews can mimic what it will look like in the other 3 modes
+
+### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ###
+
+Text viewers 
+Not to be confused with {Book Viewers} {Blog Viewers}
+
+Full text viewer mode
+Full text mode is a viewer for text files. It supports rich text features such as bold, italics, underline, strikethrough, hyperlinks, and more
+
+Description mode
+Description mode is a separate page that is openable from a posts description section. Description mode supports rich text features such as bold, italics, underline, strikethrough, hyperlinks, and more
+
+Text edit mode
+Text editing mode is the mode where you can edit text pages. 
+
+### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ###
+
+Book viewers 
+Not to be confused with {Text Viewers} {Blog Viewers}
+
+Simple book viewer
+The Simple Book viewer is the book viewer mode that simulates a basic book with features such as "preview" "animations" and more.
+Supported file formats include .odt .pdf .xps .rtf .doc .docx .epub .
+
+Library mode
+Library mode is a playlist mode that contains a series of books. You can move books from different shelves, see how far you are into each book, share books, and more.
+This mode can store up to 4,294,967,295 (4 billion, 294 million, 967 thousand, 295) image links (limited to a 32 bit integer for technical reasons) books in a collection viewing format
+It is a library for you, or if you share it, for everyone.
+
+### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ###
+
+Software viewers
+
+Web viewers
+Web viewer mode is a software viewing mode that supports web-based repositories. Supported languages for this mode include HTML (1-5) CSS (1-3) JavaScript, Python, Ruby, PHP, XHMTL, XML, and Rust
+
+Windows viewers
+Windows viewer mode is a software viewing mode that supports Microsoft Windows repositories. This mode is optimized to be viewed on Windows based systems.
+Supported program file formats include .exe .msi
+
+Apple viewers
+Apple viewer mode is a software viewing mode that supports Apple repositories. This mode is optimized to be viewed on Apple based systems. 
+Supported program file formats include .dmg .ipa
+
+Android viewers
+Android viewer mode is a software viewing mode that supports Googles Android Operating System repositories. This mode is optimized to be viewed on Android based systems
+The only supported program file format is .apk
+
+Amiga viewers
+Amiga viewer mode is a software viewing mode that supports the Legacy Amiga Operating System repositories. This mode is optimized to be viewed on Amiga Virtual Machines
+Supported program file formats include .ADF .ADZ .IPF .DMS .FDI
+
+Linux viewers
+Linux viewer mode is a software viewing mode that supports operating systems based off the Linux Kernel. Android is separate from this mode, despite it being based on the Linux Kernel.
+Linux viewers give specific instructions, and work on several different Linux Distributions including Red Hat Linux, Corel Linux, Ubuntu, Fedora Linux, Arch Linux, Gentoo Linux, and more. 
+Supported program file formats include .deb .rpm and more (unspecified yet)
+
+Terminal viewers
+Terminal viewers are the terminal modes of each viewer, where there is only text and ASCII art. The web browser can have colors changed. It is booted from the SNU terminal, and can start a program through the run command
+Many file formats are supported, such as .py .java .c .cpp .cs .ada and more
+
+Program gallery
+The program gallery is a gallery that can hold links to several projects. It is similar to a playlist. It gives you an option to view, run, or download the program. (Run is being worked on)
+
+### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ###
+
+Audio viewers
+
+Instrumental mode
+Instrumental mode is the audio viewer where you can see the waves and the process of the song being played.
+Not all formats support this mode. Special formats include .mid - which can play a graphical editor, other formats just show the wavelength
+
+Radio Mode
+Radio mode is a music mode where your music is shuffled. There are many radio stations that play many different types of music.
+
+Podcast mode
+Podcast mode is an audio mode designed for Podcasts. It has many different channels. Podcast modes are for podcasts only. Violations of this can result in account punishment. 
+
+Playlist mode
+The audio playlist mode is a mode where you can put your favorite music into, to keep to yourself, or share to the world. It is limited to 4,294,967,295 (4 billion, 294 million, 967 thousand, 295) song links (limited to a 32 bit integer for technical reasons)
+You can sort your music within the playlist with tracks and records. In total, you can have up to 4,294,967,295 (4 billion, 294 million, 967 thousand, 295) items total (limited to a 32 bit integer for technical reasons
+
+### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ###
+
+Blog viewers
+Not to be confused with {Book Viewers} {Text Viewers}
+
+Legacy blog viewer
+The SNU legacy blog viewers contain basic data in a transparent blue box. It has compatibility with rich text, images, but no videos, audio, or other formats.
+
+Modern blog viewer
+The modern blog viewer has not been specified yet. 
+
+Blog editor
+The blog editor lets you edit SNU blogs in both the legacy and modern format. You cannot import blogs, only media. 
+
+### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ###
+
+3D object viewers
+
+Sculpting mode
+Sculpting mode is a project editing mode for 3D animations and games. Supported file formats include .blend .c4d and more
+
+Print mode
+Print mode is a 3D printer viewer and progress mode that lets you manage 3D printer objects. Supported file formats include .stl .cad and more
+
+### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ###
+
+Presentation viewers
+
+Main presentation mode
+Main presentation mode is the mode where most presentations are shown. You can embed it into pages as well when needed. 
+
+Presentation editor mode
+You can edit presentations in this mode. Supported presentation formats include .odp .pptx .ppt and more
+
+### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ###
+
+Spreadsheet viewers
+
+Main spreadsheet mode
+The main spreadsheet mode is the mode where you can view/embed spreadsheets into pages. This mode does not let you edit the spreadsheets, so make sure you are ready first.
+
+Spreadsheet editor mode
+Spreadsheet editor mode is the mode where you can edit your spreadsheets. You can import/export in the formats .ods .xls .xlsx and more
+
+### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ###
+
+Database viewers
+
+Main database mode
+Main database mode is the mode where you can view/embed databases into pages. Make sure not to leave sensitive data in these.
+
+Database edtor mode
+The database editor mode is the mode where you can edit your databases. You can import/export databses in the formats .db .accdb .odb and more
+
+### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ###
+
+User profile viewers
+
+About page
+The about page is the page in the users profile where they get to write their own description. This description is limited to 500 characters, but they can bypass it and go up to 10000000 characters (not recommended to go past 2000 for easy readability)
+The about page gets its own stylesheet, and properties. It can be customized. The description is allowed to have rich text characters. No matter the character, it counts as 1. The user can have up to 512 links (links don't count with the description character limit)
+This page can be in any order in the profile, except for the home page. That always comes first.
+
+Home page
+The home page is the main page of the users profile. It is already set up, and customizations can be made here, including links, featured content, and showing/hiding the default content.
+This page doesn't affect the settings of other pages of the users profile.
+
+History page
+The history page is set to private by default. It shows the users viewing/uploading/downloading history. This page is only shown to them, and there has to be administrator access to edit this page. If you are one of multiple admins in a user group, they all must vote for it.
+The history page contains all of the content viewed by the user, along with downloads, and uploads.
+
+Search page
+The search page is separate from the history page. This page also is locked behind administrator priveleges, and the same as the history page. This page shows the users search history. Searches are stored as a .SNU_USERSRCH file. This file can be downloaded.
+This page only shows the search history from the site. It doesn't show other search history
+
+Ideaboard page
+The ideaboard page is dedicated to this users idea board page, where select users can give ideas to the creators for projects. Every user gets one.
+
+Comment page
+The comment page shows the users comment history. This page is automatically publicly available, but it can be privated. 
+
+Review page
+The review page shows the users review history. This page is automatically publicly available, but it can be privated. 
+
+{{more pages coming soon!}}
+
+### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ###
+End of file
+
+### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ###
+No more data to show, go up!
+'''
+# end of script
